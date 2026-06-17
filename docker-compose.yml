@@ -16,6 +16,6 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_DATABASE: wedding_db
+      MYSQL_DATABASE: dbwedding
     ports:
       - "3306:3306"
