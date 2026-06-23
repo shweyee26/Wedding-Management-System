@@ -1,10 +1,9 @@
 <?php
 ob_start();
-date_default_timezone_set('Asia/Manila');
-$webroot = "C:xampp22/htdocs/";
+date_default_timezone_set('Asia/Yangon');
 define('DS', DIRECTORY_SEPARATOR);
-define('SITE_ROOT', $webroot.DS.'wedding-management-php'.DS.'admin');
-define('INCLUDES_PATH', SITE_ROOT.DS.'include');
+define('SITE_ROOT', __DIR__);
+define('INCLUDES_PATH', 'SITE_ROOT');
 require_once(INCLUDES_PATH.DS."Helper.php");
 require_once(INCLUDES_PATH.DS."config.php");
 require_once(INCLUDES_PATH.DS."database.php");
